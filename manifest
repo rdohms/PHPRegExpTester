@@ -1,0 +1,27 @@
+#appname:PHPRegExpTester
+#appid:phprxt
+#publisher:rdohms
+#image:default_app_logo.png
+#url:http://www.rafaeldohms.com.br
+#guid:69072e7d-f42a-4df7-bd5d-ae7bbaf7b38b
+#desc:A tool for viewing results of regular expressions
+#type:desktop
+runtime:1.0.0
+api:1.0.0
+javascript:1.0.0
+tianalytics:1.0.0
+tiapp:1.0.0
+tifilesystem:1.0.0
+tiplatform:1.0.0
+tiui:1.0.0
+php:1.0.0
+ticodec:1.0.0
+tidatabase:1.0.0
+tidesktop:1.0.0
+tigrowl:1.0.0
+timedia:1.0.0
+timonkey:1.0.0
+tinetwork:1.0.0
+tinotification:1.0.0
+tiprocess:1.0.0
+tiworker:1.0.0
