@@ -1,8 +1,10 @@
-body { font-family: Arial, "MS Trebuchet", sans-serif; }
+body { font-family: Arial, "MS Trebuchet", sans-serif; margin:10px; }
 
 label { display: block; }
 
-.window { margin: 10px; }
+.window {  }
+.header {  }
+.footer { font-size: 9px; text-align:right; padding-top: 5px ; }
 
 .left { float:left;  }
 .right { float:right;}
@@ -17,17 +19,17 @@ label { display: block; }
 .tall { height: 100%; }
 .half_tall { height: 48%; }
 
-.btn { height: 25px; text-align: right; margin-bottom: 10px; border-bottom: 1px solid #CCC;}
+.btn { padding: 5px; text-align: right; margin-bottom: 10px;}
 
-#rg { width: 98%; -webkit-border-radius: 5px; border: 1px solid #DDD; padding: 3px; margin-bottom: 10px;}
+#rg { width: 85%; -webkit-border-radius: 5px; border: 1px solid #DDD; padding: 3px; margin-bottom: 10px;}
 #tt { width: 98%; height: 250px; -webkit-border-radius: 10px; border: 1px solid #DDD; padding: 5px;  }
 
-#invokePHP {  }
+#invokePHP { padding: 0px; margin: 0px; }
 
-#p_match_dump { -webkit-border-radius: 10px; border: 1px solid #DDD; display:block; padding: 5px; }
-#p_match_all_dump { -webkit-border-radius: 10px; border: 1px solid #DDD; display:block; padding: 5px; }
+#p_match_dump { -webkit-border-radius: 10px; border: 1px solid #DDD; display:block; padding: 5px; background: #EDEDED url('/images/pgm.png') no-repeat fixed 98% 15%; }
+#p_match_all_dump { -webkit-border-radius: 10px; border: 1px solid #DDD; display:block; padding: 5px; background: #EDEDED url('/images/pgma.png') no-repeat fixed 98% 15%; }
 
 .res_box {background-color: #EDEDED; font-size: 12px; overflow-y: auto; height: 150px; margin-bottom: 10px;}
 .res_box p {padding: 0; margin: 0; }
-.res_box .rtype { color: #CCC; font-size: 75%; font-style: italic; padding: 2px; }
+.res_box .rtype { color: #7C7C7C; font-size: 75%; font-style: italic; padding: 2px; }
 .res_box .rvalue { color: #000; padding: 7px; }

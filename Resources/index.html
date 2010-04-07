@@ -1,25 +1,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 	<head>
-		<title>PHP RegExp Tester</title>
+		<title>PHP Regular Expression Tester</title>
 		<script src="js/formHandler.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="js/jquery-1.4.2.js"></script>	 
 		<link rel="stylesheet" type="text/css" href="css/app.css" media="all">
 	</head>
 	<body>
-		<h1>
-			PHP RegExp Tester
-		</h1>
-		<div class="window">
-
-			<div class="btn full">
-				<input type="button" value="Execute" id="invokePHP">
-			</div>
+		<div class="window clear_both">
 						
 			<div class="fifty left tall">
 				<div class="">
 					<label for="rg">RegExp</label>
 					<input type="text" name="regexp" value="/([0-9]{2})/" id="rg">
+					
+					<div class="right">
+						<input type="image" src="images/run.png" value="Execute" id="invokePHP">
+					</div>
 				</div>
 				
 				<div class="">
@@ -37,11 +34,10 @@
 
 				</div>
 			</div>
-
-			
-
 		</div>
-		
+		<div class="footer clear_both full">
+			<p>Powered By [PHP] | <a href="#">About</a></p>
+		</div>
 		<script type="text/php">
 		  include("libs/RegExpHandler.php");
 
