@@ -1,0 +1,11 @@
+h1. PHP Regular Expression Tester
+
+This application is developed using the Appcelerator Titanium package and is available for Mac, Linux and Windows. Its a really simple application that allows you to run regular expressions agains a text without the need to create a random php file to test the combinations or having to rely on internet testers that may not use the same regular expression engine as PHP, this application runs with the PHP engine, so you can be sure of the results.
+
+h1. Installing/Downloading
+
+Download the version of the app according to your system in the "dist" folder.
+
+h1. Credits
+
+Developed by Rafael Dohms "(http://www.rafaeldohms.com.br)":http://www.rafaeldohms.com.br
