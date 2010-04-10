@@ -3,10 +3,10 @@
 <!-- These values are edited/maintained by Titanium Developer -->
 <id>phprxt</id>
 <name>PHPRegExpTester</name>
-<version>1.0</version>
-<publisher>rdohms</publisher>
+<version>1.0.1</version>
+<publisher>Rafael Dohms</publisher>
 <url>http://www.rafaeldohms.com.br</url>
-<icon>default_app_logo.png</icon>
+<icon>app_icon.png</icon>
 <copyright>2010 by rdohms</copyright>
 <!-- Window Definition - these values can be edited -->
 <window>
@@ -17,7 +17,7 @@
 <max-width>3000</max-width>
 <min-width>700</min-width>
 <height>412</height>
-<max-height>3000</max-height>
+<max-height>412</max-height>
 <min-height>412</min-height>
 <fullscreen>false</fullscreen>
 <resizable>true</resizable>
