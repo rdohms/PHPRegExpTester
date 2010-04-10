@@ -1,16 +1,20 @@
 <?php
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+namespace RET;
 
 /**
- * Formatter
+ * Formats the output of regular expression runs
  *
- * @author rdohms
+ * @package Core
+ * @author Rafael Dohms
  */
 class Formatter {
 
+	/**
+	 * Convert and array to a string representation in tree format
+	 *
+	 * @param string $array 
+	 * @return string
+	 */
     public static function arrayToTree($array)
     {
         $tree = "";
