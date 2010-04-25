@@ -6,7 +6,7 @@
 <version>1.0.1</version>
 <publisher>Rafael Dohms</publisher>
 <url>http://www.rafaeldohms.com.br</url>
-<icon>app_icon.png</icon>
+<icon>default_app_logo.png</icon>
 <copyright>2010 by rdohms</copyright>
 <!-- Window Definition - these values can be edited -->
 <window>

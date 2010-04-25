@@ -59,8 +59,8 @@ class RegExpHandler
 	 */
     public function getPmMatches() {
         
-        $result['expr'] = $this->pmMatches[0];
-        $result['mtch'] = $this->pmMatches[1];
+        $result['expr'] = Formatter::sanitize($this->pmMatches[0]);
+        $result['mtch'] = Formatter::sanitize($this->pmMatches[1]);
         
         return $result;
     }

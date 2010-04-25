@@ -24,12 +24,17 @@ class Formatter {
                 $item = Formatter::arrayToTree($item);
             }
 
-            $tree .= "[".$key."] ".$item . PHP_EOL;
+            $tree .= "[".$key."] ". self::sanitize($item) . PHP_EOL;
 
         }
 
         return $tree;
     }
+
+	public static function sanitize($string)
+	{
+		return htmlentities($string);
+	}
 
 }
 ?>
