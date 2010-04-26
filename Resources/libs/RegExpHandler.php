@@ -29,6 +29,11 @@ class RegExpHandler
 	 */
     private $pmaMatches;
     
+
+	private $pmCount;
+	
+	private $pmaCount;
+	
 	/**
 	 * Constructor
 	 *
@@ -48,8 +53,20 @@ class RegExpHandler
 	 */
     public function process()
     {
-        $exec = preg_match($this->regExp, $this->text, $this->pmMatches);
-        $exec = preg_match_all($this->regExp, $this->text, $this->pmaMatches);
+	
+		$this->regExp = Validator::validateRegExp($this->regExp);
+	
+		$execPm = preg_match($this->regExp, $this->text, $this->pmMatches);
+		$execPma = preg_match_all($this->regExp, $this->text, $this->pmaMatches);
+		
+		//Check for invalid regexp reports
+        if ( $execPm === false || $execPma === false ) {
+			throw new \Exception("Invalid Regular Expression");
+		}
+
+		$this->pmCount = $execPm;
+		$this->pmaCount = $execPma;
+
     }
 
 	/**
@@ -59,6 +76,7 @@ class RegExpHandler
 	 */
     public function getPmMatches() {
         
+		$result['count'] = $this->pmCount;
         $result['expr'] = Formatter::sanitize($this->pmMatches[0]);
         $result['mtch'] = Formatter::sanitize($this->pmMatches[1]);
         
@@ -71,6 +89,8 @@ class RegExpHandler
 	 * @return array
 	 */
     public function getPmaMatches() {
+	
+		$result['count'] = $this->pmaCount;
         $result['expr'] = Formatter::arrayToTree($this->pmaMatches[0]);
         $result['mtch'] = Formatter::arrayToTree($this->pmaMatches[1]);
 

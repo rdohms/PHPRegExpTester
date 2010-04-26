@@ -12,7 +12,7 @@
 			<div class="fifty left tall">
 				<div class="regexp">
 					<div class="full left">
-						<label for="rg">Regular Expression</label>
+						<label for="rg">Regular Expression (use '/' as delimiters )</label>
 						<input type="text" name="regexp" value="" id="rg">
 					</div>
 					
@@ -23,9 +23,7 @@
 				
 				<div class="">
 					<label for="tt">Target Text</label> 
-					<textarea id="tt" name="target_text" cols="30" rows="10">
-						
-					</textarea>
+					<textarea id="tt" name="target_text" cols="30" rows="10"></textarea>
 				</div>
 			</div>
 
@@ -59,6 +57,14 @@
 				<a class="right clear_both" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>
 			
 		</div>
+		
+		<div id="invalidRegExp">
+			<div class="close">
+				<a href="#"><img src="images/closebox.png" alt="close"></a>
+			</div>
+			<p>Invalid Regular Expression</p>
+		</div>
+		
 		<script type="text/javascript">
 			jQuery.fn.center = function () {
 			    this.css("position","absolute");

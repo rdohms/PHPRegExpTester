@@ -53,3 +53,8 @@ label { display: block; }
 .about .cc a{ color: #FFF; }
 .about ul {padding: 0px; margin: 0px; list-style-type:none; font-size: 14px;}
 .about ul li { padding-left:15px; }
+
+#invalidRegExp .close { float:right; }
+#invalidRegExp{ width: 50%; -webkit-border-radius: 15px; background-color: #000; border: 2px solid #FFF; padding: 15px;
+		 position: absolute; display: none;
+	     color: #FFF; font-size: 12px; }
